@@ -1,0 +1,23 @@
+@import './../../theme/variables';
+
+ion-content {
+    --background: #fff url("~/assets/img/background-3.jpg") no-repeat center center / cover;
+ }
+
+ 
+ ion-header{background:$myBg;}
+ ion-toolbar{background:$myBg;}
+#myMap2{z-index: 1;}
+ ion-input{
+      margin-top: 7px;height: 32px;border-radius: 5px;padding:5px !important;
+}
+.location-icon{position: absolute; top: 70%; right: 10px; width: 31px; height: 31px;text-align: center;line-height: 41px; background: #fff;cursor: pointer;z-index: 999;border-radius: 100%}
+.drop-btn{margin: 0; display: block;position: absolute;z-index: 999;left: 0; right: 0; bottom: 50px;}
+.drop-location{    position: absolute; top: 60px; left: 50%; right: 50%;transform: translate(-50%, 0); width: 71%; background: #ffffffa6; border-radius: 5px; box-shadow: 0px 0px 5px #525252; z-index: 1; font-size: 12px;}
+ion-content{
+	ion-fab{background: #000000eb; padding: 5px; border-radius: 4px;line-height: 13px; margin-top: 42px;font-size: 25px;}
+}
+.md{
+
+	.drop-btn{bottom: 59px;}
+}

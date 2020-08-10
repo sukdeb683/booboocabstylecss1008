@@ -1,0 +1,85 @@
+@import './../../theme/variables';
+
+ion-content {
+    --background: #fff url("~/assets/img/background-3.jpg") no-repeat center center / cover;
+ }
+
+ 
+ ion-header{background:$myBg;}
+ ion-toolbar{background:$myBg;}
+
+#Maplist0{z-index: 1;}
+ ion-input{
+      margin-top: 7px;
+      height: 32px;
+      border-radius: 5px;
+      padding:5px !important;
+}
+// .location-icon{position: absolute;
+//     top: 70%;
+//     right: 10px;
+//     width: 31px;
+//     height: 31px;
+//     text-align: center;
+//     line-height: 41px;
+//     background: #fff;
+//     cursor: pointer;
+//     z-index: 999;
+//     border-radius: 100%
+// }
+.track-btn{margin: 0;
+    display: block;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    right: 0;
+    bottom: 50px;
+}
+// .drop-location{    position: absolute;
+//     top: 83px;
+//     left: 50%;
+//     right: 50%;
+//     transform: translate(-49%, 0); 
+//     width: 73%; 
+//     background: #ffffffa6; 
+//     border-radius: 5px; 
+//     box-shadow: 0px 0px 5px #525252; 
+//     z-index: 1; 
+//     font-size: 12px;
+// }
+ion-content{
+    ion-fab{
+        cursor: pointer;
+        background: #ffffff94;
+        color: #353535;
+        padding: 6px;
+        border-radius: 4px;
+        line-height: 13px;
+        font-size: 25px;    
+    }
+}
+
+.my-plus-fab{margin-top: 51px;}
+.my-delete-fab{margin-top: 92px;}
+.md{
+	.track-btn{bottom: 58px;}
+}
+
+
+
+ion-fab-list{
+    ion-badge{
+    position: absolute;
+    left: -65%;
+    top: -34px;
+    transform: translate(-50%, 0px);
+    }
+}
+
+.driving-start{position: absolute;
+    top: 70%;
+    right: 0;
+    width: 100px;
+    cursor: pointer;
+    z-index: 5;
+}

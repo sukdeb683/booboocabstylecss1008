@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 3
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+
+  <ion-icon name="logo-designernews"></ion-icon>
+  <app-explore-container name="Tab 3 page"></app-explore-container>
+
+
+
+
+ <!-- fab placed to the bottom and start and on the bottom edge of the content overlapping footer with a list to the right -->
+ <ion-fab vertical="center" horizontal="end" edge slot="fixed">
+  <ion-fab-button>
+    <ion-icon name="settings"></ion-icon>
+  </ion-fab-button>
+  <ion-fab-list side="start">
+    <ion-fab-button>
+      <!-- <ion-icon name="logo-vimeo"></ion-icon> -->
+      <ion-input value="custom"></ion-input>
+    </ion-fab-button>
+  </ion-fab-list>
+ </ion-fab>
+
+
+
+
+
+</ion-content>

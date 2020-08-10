@@ -1,0 +1,44 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="dark">
+    <ion-title>
+      Boo Boo Cabs
+    </ion-title>
+    <ion-thumbnail slot="start">
+      <img src="assets/img/logo-1.png" size="small" >
+    </ion-thumbnail>
+
+    <ion-button (click)="logout()" slot="end"  color="light" >
+      <ion-icon name="power-outline"></ion-icon>
+      <!-- <ion-icon name="log-out-outline"></ion-icon> -->
+    </ion-button>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <app-menuone></app-menuone>
+
+  <ion-fab vertical="top" horizontal="end" slot="fixed">
+    <ion-router-link href="/members/tab1">
+      <ion-icon name="arrow-back-sharp" color="light"></ion-icon>
+    </ion-router-link>
+  </ion-fab>
+
+
+  <div id="myMap2" style="width: 100%; height: 100%;" ></div>
+
+  <ion-button (click)="drop()" color="primary" class="drop-btn">
+      Drop Me  Here
+  </ion-button>
+
+
+  <!-- <ion-icon name="search-outline"  (click)="esriSearch()" ></ion-icon> -->
+  <ion-thumbnail (click)="getPositions()" class="location-icon">
+    <img src="assets/icon/location-icon.png" size="small"  style="Width: 72%;  height: auto;" >
+  </ion-thumbnail>
+
+  <ion-input class="drop-location" clearInput value="" placeholder="Drop-Point name(optional)" [(ngModel)]="dropLocName"  ></ion-input>
+
+
+</ion-content>

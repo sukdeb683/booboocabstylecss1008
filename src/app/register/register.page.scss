@@ -1,0 +1,10 @@
+ion-content {
+    --background: #fff url("~/assets/img/background-9.jpg") no-repeat center center / cover;
+ }
+ 
+ion-input{
+    border: solid grayscale($color: #5f5959) 0.1px;  margin-top: 3px;height: 32px;border-radius: 5px;padding:5px !important;
+}
+.register-form{background: #fff; padding: 15px; border-radius: 5px;}
+ion-row{padding:25px;}
+ion-thumbnail{padding:5px;}

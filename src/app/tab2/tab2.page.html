@@ -1,0 +1,112 @@
+  <ion-header [translucent]="true">
+    <ion-toolbar color="dark">
+      <ion-title>
+        Boo Boo Cabs
+      </ion-title>
+      <ion-thumbnail slot="start">
+        <img src="assets/img/logo-1.png" size="small" >
+      </ion-thumbnail>
+
+      <ion-button (click)="logout()" slot="end"  color="light" >
+        <ion-icon name="power-outline"></ion-icon>
+        <!-- <ion-icon name="log-out-outline"></ion-icon> -->
+      </ion-button>
+
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content [fullscreen]="true">
+
+    <app-menuone></app-menuone>
+
+    
+    <!-- fab 1 -->
+    <!-- <ion-fab (click)="openMenu()" class="my-menu-fab" horizontal="end" slot="fixed">
+      <ion-icon name="menu-sharp"></ion-icon>
+    </ion-fab>
+    <ion-list class="menu-content" [hidden]="menuClicked" vertical="top" horizontal="end" slot="fixed" >
+      <ion-item>Menu Item</ion-item>
+      <ion-item>Menu Item</ion-item>
+      <ion-item>Menu Item</ion-item>
+      <ion-item>Menu Item</ion-item>
+      <ion-item>Menu Item</ion-item>
+    </ion-list> -->
+
+    <!-- fab 2 -->
+    <ion-fab  [hidden]="hideDeleteIcon" class="my-plus-fab" horizontal="end" slot="fixed">  
+      <ion-icon name="information-outline"></ion-icon>
+      <ion-fab-list class="my-plus-fab-list" side="start">
+        <ion-badge color="light">
+          <ion-text color="tertiary" class="ion-text-left" >
+            <p>
+              <ion-label color="dark">Request Time:   </ion-label> <span>{{ mylistdata[0]?.pickupDate|date:'medium'  }}</span>
+            </p>
+            <p>
+              <ion-label color="dark">Pickup Location Name:</ion-label> <span>{{ mylistdata[0]?.pickupLocName|titlecase }}</span>
+            </p>
+            <p>
+              <ion-label color="dark">Drop Location Name:</ion-label> <span>{{ mylistdata[0]?.dropLocName|titlecase }}</span>
+            </p>
+          </ion-text>
+        </ion-badge>
+      </ion-fab-list>
+    </ion-fab>
+
+    <!-- fav 3 -->
+    <ion-fab [hidden]="hideDeleteIcon" (click)="deleteRide()" class="my-delete-fab" horizontal="end" slot="fixed">  
+      <ion-icon name="trash-outline"></ion-icon>
+    </ion-fab>
+
+    
+
+
+
+
+    <!-- <ion-card *ngIf="user">
+      <ion-card-content>
+        {{ user.email }} - {{ user.first_name }} {{ user.last_name }}
+      </ion-card-content>
+    </ion-card> -->
+  
+
+ 
+
+    <div id="Maplist0" style="width: 100%; height: 100%;" ></div>
+
+
+    <ion-thumbnail vertical="top" horizontal="end" class="driving-start">
+      <img src="assets/icon/car.gif" size="small"  style="Width: 150px;  height: auto;" >
+    </ion-thumbnail>
+
+
+    <ion-button  (click)="trackRide()" expand="block"  color="success" class="track-btn" >
+      Track
+    </ion-button>
+
+    <!-- <ion-slides #slides [options]="mySlideOptions">
+      <ion-slide *ngFor="let c of mylistdata; let i = index">
+            <div *ngIf="c.pickupDate" id="Maplist0"  style="width: 100%; height: 100%;"  >{{ c.pickupDate }}</div>
+            
+      </ion-slide>
+    </ion-slides> -->
+
+
+    <!-- <ion-slides #slides [options]="mySlideOptions" >
+      <ion-slide>
+        001
+      </ion-slide>
+  
+      <ion-slide>
+        002
+      </ion-slide>
+    </ion-slides> -->
+
+    <!-- 
+    <button type="submit" float-left ion-button  color="primary" class="btnPrev" (click)="prev()">Prev</button>
+    <button type="submit" float-right ion-button color="primary" class="btnNext" (click)="next()">Next</button>
+
+    -->
+
+
+  
+  </ion-content>

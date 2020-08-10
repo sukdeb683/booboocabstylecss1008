@@ -1,0 +1,7 @@
+{
+  "name": "auth-tab-test",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

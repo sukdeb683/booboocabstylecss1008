@@ -1,0 +1,11 @@
+@import './../../theme/variables';
+
+ion-thumbnail{height:25px; width:25px;}
+
+ion-tab-bar{ 
+    --background: rgb(253, 252, 209);
+}
+
+ion-tab-button[aria-selected=true] {
+    background-color: #dedede;
+ }
